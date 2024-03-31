@@ -18,7 +18,6 @@ c = a[0:4];
 print(c)
 
 
-
 #vector addition
 
 u= np.array([[0],[1]])
@@ -48,3 +47,5 @@ y =np.sin(x)
 
 
 plt.plot(x,y)
+
+#a comment deleted
