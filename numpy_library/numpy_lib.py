@@ -63,3 +63,5 @@ e=  np.array([[1,2,3],
 
 print(d[2:3,1:3]) # slicing 2d arrays
 print(d+e)
+
+print(e);
