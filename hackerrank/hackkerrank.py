@@ -19,11 +19,7 @@ def diagonalDifference(arr):
 
 
 
-def test():
-  #print(diagonalDifference(array))
- #staircase(6)
- staircase2(6)
- pass;
+
 
 
 
@@ -52,4 +48,35 @@ def staircase2(n):
 
 
 
-test()
+
+
+
+
+
+def plusMinus(arr):
+    count_pos=0
+    count_negative =0;
+    count_zero=0;
+    size = len(arr);
+    for i  in range(len(arr)):
+        if  arr[i] >0 :
+            count_pos +=1;
+        if arr[i]==0:
+            count_zero +=1;  
+        if arr[i] <0:
+            count_negative+=1;
+   
+    print(round(count_pos/size,6))
+    print(round(count_negative/size,6))
+    print(round(count_zero/size,6))
+        
+                
+            
+                  
+                 
+def test():
+ #print(diagonalDifference(array))
+ #staircase(6)
+ #staircase2(6)
+ #plusMinus([1,2,-1,0]);
+ pass;
