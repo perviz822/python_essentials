@@ -74,9 +74,26 @@ def plusMinus(arr):
             
                   
                  
+
+
+
+def birthdayCakeCandles(candles):
+     count=0;
+     max =float('-inf')
+     for i in  range(len(candles)):
+         if  candles[i]>max:
+             max=candles[i];
+             
+         elif candles[i] == max :
+             count+=1;
+               
+     return count+1;           
+
 def test():
  #print(diagonalDifference(array))
  #staircase(6)
  #staircase2(6)
  #plusMinus([1,2,-1,0]);
+ print(birthdayCakeCandles([1,1,1,3]))
  pass;
+test()
