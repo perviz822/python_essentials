@@ -70,30 +70,56 @@ def plusMinus(arr):
     print(round(count_negative/size,6))
     print(round(count_zero/size,6))
         
-                
-            
-                  
-                 
+          
 
 
 
-def birthdayCakeCandles(candles):
-     count=0;
-     max =float('-inf')
-     for i in  range(len(candles)):
-         if  candles[i]>max:
-             max=candles[i];
-             
-         elif candles[i] == max :
-             count+=1;
-               
-     return count+1;           
+def add_zero_if_nec(s):
+    
+    if s[0]=='0':
+      return int(s[1])
+    elif s[0:2]=='12':
+      print(' itis12')
+      return 0
+    
+    else:
+     return int(s[0:2])  
+    
+      
+  
+    
+
+def timeConversion(s):
+ 
+  my_list  = s.split(":")
+  print(my_list[0])
+  ending= my_list[len(my_list)-1][2:]
+  print(ending)
+  my_list[len(my_list)-1] = my_list[len(my_list)-1][0:2]
+  
+  if ending=='PM':
+    print('ending is pm')
+    my_list[0]=str(add_zero_if_nec(my_list[0])+12)
+
+  else:
+     if my_list [0]=='12':
+        my_list[0]='00'  
+   
+   
+  return ':'.join(my_list) 
+
+
+    
+    
+
+     
 
 def test():
  #print(diagonalDifference(array))
  #staircase(6)
  #staircase2(6)
  #plusMinus([1,2,-1,0]);
- print(birthdayCakeCandles([1,1,1,3]))
+ print(timeConversion('12:45:54PM'))
+ 
  pass;
 test()

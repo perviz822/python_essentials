@@ -39,3 +39,5 @@ print('hello')
 
 #change 7
 
+
+print("hello" <  "police ")
