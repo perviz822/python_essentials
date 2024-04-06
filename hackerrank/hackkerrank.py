@@ -109,10 +109,7 @@ def timeConversion(s):
   return ':'.join(my_list) 
 
 
-    
-    
-
-     
+  
 
 def test():
  #print(diagonalDifference(array))
