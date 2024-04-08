@@ -110,13 +110,51 @@ def timeConversion(s):
 
 
   
+def gradingStudents(grades):
+    grades_list =[]
+    for i in range(len(grades)):
+        j=1;
+        divisible_by_5=0;
+        if grades[i] < 40:
+           grades_list.append(grades[i])
+        else:   
+          while ((grades[i]+j)%5!=0):
+            j+=1
+          divisible_by_5 = grades[i]+j
+        
+        
+          if  divisible_by_5 - grades[i]<3:
+            grades_list.append(divisible_by_5)
+           
+           
+          else:
+            grades_list.append(grades[i])   
+
+    return grades_list     
+                
+
+
+'''def gradingStudents(grades):
+    updated_grades = []  # Create a new list to store the updated grades
+    for grade in grades:
+        if grade < 40:
+            updated_grades.append(grade)  # Keep grades below 40 unchanged
+        else:
+            next_multiple_of_5 = (grade // 5 + 1) * 5  # Find the next multiple of 5
+            if next_multiple_of_5 - grade < 3:  # Check if rounding up is needed
+                updated_grades.append(next_multiple_of_5)  # Round up to the next multiple of 5
+            else:
+                updated_grades.append(grade)  # Keep the grade unchanged
+    return updated_grades'''
 
 def test():
  #print(diagonalDifference(array))
  #staircase(6)
  #staircase2(6)
  #plusMinus([1,2,-1,0]);
- print(timeConversion('12:45:54PM'))
+ #print(timeConversion('12:45:54PM'))
+
+ print(gradingStudents([29,23,45,49,18]))
  
  pass;
 test()

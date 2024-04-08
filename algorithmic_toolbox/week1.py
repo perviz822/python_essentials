@@ -14,8 +14,6 @@ def max_pairwise_product(numbers):
 
 
 
-
-
 def  max_product(arr:list[int]) ->int :
    new_arr= [];
    max  = float('-inf')
@@ -58,8 +56,26 @@ def generate_random_lists(num_lists, min_length, max_length, min_value, max_valu
     return lists
 
 
+
+
+
    
 
-generate_random_lists(100000,0,10,0,100)
+#enerate_random_lists(1000000,0,100,0,100)
+
+
+
+def fibonacci(n):
+   
+    if n <=1:
+        return n
+    else:
+        return  fibonacci(n-1)+ fibonacci(n-2)
+    
+
+
+
+
+print(fibonacci(4))
 
             
