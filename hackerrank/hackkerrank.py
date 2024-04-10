@@ -121,8 +121,6 @@ def gradingStudents(grades):
           while ((grades[i]+j)%5!=0):
             j+=1
           divisible_by_5 = grades[i]+j
-        
-        
           if  divisible_by_5 - grades[i]<3:
             grades_list.append(divisible_by_5)
            
@@ -160,3 +158,5 @@ def test():
 test()
 
 #i am modified
+
+# a modification from branch1
