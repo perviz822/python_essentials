@@ -13,3 +13,6 @@ l3 = [int(math.sqrt(item))  for item in l2]
 print(l3)
 
 l4 =  [item for item in l3 if item>10]
+
+
+l5=  [item for item in l4 if item <4]
