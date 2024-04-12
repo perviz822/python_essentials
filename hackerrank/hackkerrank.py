@@ -15,16 +15,6 @@ def diagonalDifference(arr):
 
 
 
-
-
-
-
-
-
-
-
-
-
 def staircase(n):
     # Write your code here
     #scale=[]
@@ -145,6 +135,43 @@ def gradingStudents(grades):
                 updated_grades.append(grade)  # Keep the grade unchanged
     return updated_grades'''
 
+
+def write(string, n):
+    i=0
+    while i<len(string):
+       for j in range(n):
+          if i+j >=len(string):
+             break
+          print(string[i+j], end ='')
+       i=i+j+1
+       print('\n')   
+
+def print_door_mat ():
+ 
+ args = [int(item) for  item in input("enter the doormat  height and width: ").split(" ")  if item  ]
+
+ t=1
+
+ for i in range(args[0]):
+        print('-'* int((args[1]-t*3)//2) , end ='')
+      
+        if i !=int((args[0]-1)//2):
+          print('.|.'*t, end='')
+        else:
+            print('-'* int((args[1]-7)//2) , end ='')
+            print('WELCOME', end='')  
+            print('-'* int((args[1]-7)//2) , end ='')
+        print(('-')*(int((args[1]-t*3)//2)) , end ='')
+
+        print('\n')  
+
+        t=t+2 if i !=int((args[0]-1)//2) and i<int((args[0]-1)//2) else t-2
+    
+   
+
+
+
+
 def test():
  #print(diagonalDifference(array))
  #staircase(6)
@@ -153,7 +180,10 @@ def test():
  #print(timeConversion('12:45:54PM'))
 
  print(gradingStudents([29,23,45,49,18]))
+ write('asdadfsdfsd',4)
  
  pass;
 test()
+
+
 
