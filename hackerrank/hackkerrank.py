@@ -186,8 +186,4 @@ def test():
 test()
 
 
-# a change from main 1
 
-# a change from branch1
-# a change 2 from branch1
-# a change3 from branch1
