@@ -154,7 +154,6 @@ def print_door_mat ():
 
  for i in range(args[0]):
         print('-'* int((args[1]-t*3)//2) , end ='')
-      
         if i !=int((args[0]-1)//2):
           print('.|.'*t, end='')
         else:
@@ -169,7 +168,27 @@ def print_door_mat ():
     
    
 
+'''
 
+# here in this task we make sure that each value  takes the same amount space as the longest string
+# for example   : rjust
+1 2 3              -->    1    2    3
+1234 3455 3454         1234 3455 3454
+
+ljust
+1 2 3              --> 1    2    3
+1234 3455 3454         1234 3455 3454
+
+'''
+def print_formatted(n):
+  max_space =  len(bin(n))-2
+  for i in range(1,n+1):
+   octal =format(i,'o')
+   binary  = format(i,'b')
+   hexa =  format(i,'X')
+   print("{i} {octal} {hexa} {binary}".format(i=str(i).rjust(max_space) ,octal=octal.rjust(max_space),binary=binary.rjust(max_space),hexa=hexa.rjust(max_space)))
+
+   
 
 
 def test():
@@ -178,9 +197,9 @@ def test():
  #staircase2(6)
  #plusMinus([1,2,-1,0]);
  #print(timeConversion('12:45:54PM'))
-
- print(gradingStudents([29,23,45,49,18]))
- write('asdadfsdfsd',4)
+ #print(gradingStudents([29,23,45,49,18]))
+ #write('asdadfsdfsd',4)
+ print_formatted(12)
  
  pass;
 test()
