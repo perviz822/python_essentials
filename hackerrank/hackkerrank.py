@@ -189,7 +189,10 @@ def print_formatted(n):
    print("{i} {octal} {hexa} {binary}".format(i=str(i).rjust(max_space) ,octal=octal.rjust(max_space),binary=binary.rjust(max_space),hexa=hexa.rjust(max_space)))
 
    
-
+def print_second_max (arr):
+    l = list(arr)
+    l= [item  for item in l if item != max(l)]
+    print(max(l))
 
 def test():
  #print(diagonalDifference(array))
@@ -199,8 +202,8 @@ def test():
  #print(timeConversion('12:45:54PM'))
  #print(gradingStudents([29,23,45,49,18]))
  #write('asdadfsdfsd',4)
- print_formatted(12)
- 
+ #print_formatted(12)
+ print_second_max([6,6,622,34,31,2,3])
  pass;
 test()
 
