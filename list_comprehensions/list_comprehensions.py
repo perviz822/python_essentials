@@ -1,7 +1,6 @@
 import numpy as np 
 import math
 
-
 l1 = [1,12,3,4,5]
 
 l2 = [item**2 for item in l1]
