@@ -208,9 +208,3 @@ def test():
 test()
 
 
-
-<<<<<<< HEAD
-# a change in hackkerank from main
-
-#  brand new change from main
->>>>>>> e35fc3e (s)
