@@ -193,7 +193,7 @@ def print_second_max (arr):
     l = list(arr)
     l= [item  for item in l if item != max(l)]
     print(max(l))
-
+  
 def test():
  #print(diagonalDifference(array))
  #staircase(6)
