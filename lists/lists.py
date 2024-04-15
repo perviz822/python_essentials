@@ -155,6 +155,3 @@ for i in   range(len(min_removed)):
 new=sorted(new)
 for i in   range(len(new)):
     print(new[i])
-
-
- # a conflicting change from main   
