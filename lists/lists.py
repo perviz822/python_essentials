@@ -1,4 +1,4 @@
-q
+
 import copy
 
 
@@ -125,36 +125,33 @@ array = [[1,2,3],[4,5,6],[7,8,9]]
 #print(diagonalDifference(array))
 
 
-nested_l=[]
-for _ in range(int(input())):
-        name = input()
-        score = float(input())
-        nested_l.append([name, score])
+def giveTheSecondMinimums():
+  # this function takes 
+  nested_l=[]
+  for _ in range(int(input())):
+          name = input()
+          score = float(input())
+          nested_l.append([name, score])
 
+  new_list =  sorted(nested_l,key=lambda x : x[1])
+  print(new_list)
+  print('the min is')
+  print(min(new_list,key=lambda x :x[1]))
 
+  min_removed = [ item  for item  in new_list if item[1] !=min(new_list,key=lambda x :x[1])[1]]
 
-#print(l)
+  new=[]
+  for i in   range(len(min_removed)):
+        new.append(min_removed[i][0])
+        if i+1 <len(min_removed): 
+          if(min_removed[i+1][1] !=min_removed[i][1]):
+            break;
+        else:
+            break;
 
-
-new_list =  sorted(nested_l,key=lambda x : x[1])
-print(new_list)
-print('the min is')
-print(min(new_list,key=lambda x :x[1]))
-
-min_removed = [ item  for item  in new_list if item[1] !=min(new_list,key=lambda x :x[1])[1]]
-
-new=[]
-for i in   range(len(min_removed)):
-      new.append(min_removed[i][0])
-      if min_removed[i+1][1] is not None:
-       if(min_removed[i+1][1] !=min_removed[i][1]):
-          break;
-      else:
-          break;
-
-new=sorted(new)
-for i in   range(len(new)):
-    print(new[i])
+  new=sorted(new)
+  for i in   range(len(new)):
+      print(new[i])
 
 
   # change from branch1
@@ -163,7 +160,7 @@ for i in   range(len(new)):
   # a second change from  main
 
 
-import copy
+import copy#
 
 
 # create  and print list
@@ -288,35 +285,4 @@ array = [[1,2,3],[4,5,6],[7,8,9]]
 
 #print(diagonalDifference(array))
 
-
-nested_l=[]
-for _ in range(int(input())):
-        name = input()
-        score = float(input())
-        nested_l.append([name, score])
-
-
-
-#print(l)
-
-
-new_list =  sorted(nested_l,key=lambda x : x[1])
-print(new_list)
-print('the min is')
-print(min(new_list,key=lambda x :x[1]))
-
-min_removed = [ item  for item  in new_list if item[1] !=min(new_list,key=lambda x :x[1])[1]]
-
-new=[]
-for i in   range(len(min_removed)):
-      new.append(min_removed[i][0])
-      if min_removed[i+1][1] is not None:
-       if(min_removed[i+1][1] !=min_removed[i][1]):
-          break;
-      else:
-          break;
-
-new=sorted(new)
-for i in   range(len(new)):
-    print(new[i])
 
