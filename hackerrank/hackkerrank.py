@@ -168,6 +168,9 @@ def print_door_mat ():
     
    
 
+
+
+
 '''
 
 # here in this task we make sure that each value  takes the same amount space as the longest string
@@ -193,6 +196,39 @@ def print_second_max (arr):
     l = list(arr)
     l= [item  for item in l if item != max(l)]
     print(max(l))
+
+'''
+
+The provided code stub will read in a dictionary containing 
+key/value pairs of name:[marks] for a list of students. Print
+the average of the marks array for the student name provided, 
+showing 2 places after the decimal.
+'''
+
+
+def print_average_marks():
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()    
+    print(student_marks.values())
+    sum=0
+    for  elem in student_marks[query_name]:
+        sum+=elem
+  
+    print("{:.2f}".format(sum/len(student_marks[query_name])))
+       
+
+         
+   
+
+
+
+   
+
   
 def test():
  #print(diagonalDifference(array))
@@ -203,7 +239,8 @@ def test():
  #print(gradingStudents([29,23,45,49,18]))
  #write('asdadfsdfsd',4)
  #print_formatted(12)
- print_second_max([6,6,622,34,31,2,3])
+ #print_second_max([6,6,622,34,31,2,3])
+ print_average_marks()
  pass;
 test()
 
