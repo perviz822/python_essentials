@@ -27,7 +27,17 @@ def look_for_sub_string(s,sub_s):
          contains=True; 
    return contains  
 
-print(look_for_sub_string("Azerbaijan","an"))
+#print(look_for_sub_string("Azerbaijan","an"))
+
+print('h'.center(8))
+
+for i in range(1,8):
+  
+    print((('h'*i).rjust(8)),end='')
+    print((('h'*i).ljust(8)))
+    
+
+
 
 
 
