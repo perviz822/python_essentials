@@ -20,7 +20,7 @@ class Parser(HTMLParser):
       for attr, value  in attrs:
           print("->{}>{}".format(attr,value))
 
-# Creating an instance of our class.
+# Creating an instance of our class.ll
 parser = Parser()
 # Poviding the input.
 parser.feed('<html><title class = "t1">Satyam Blog</title><body><p>'

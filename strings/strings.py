@@ -1,4 +1,5 @@
 import numpy as np
+import math
 def count_letters(s):
  print("Enter the string")
 
@@ -29,17 +30,20 @@ def look_for_sub_string(s,sub_s):
 
 #print(look_for_sub_string("Azerbaijan","an"))
 
-print('h'.center(8))
+def cone_print(thickness,letter):
+    for i in range(math.ceil(thickness/2)):
+     print((letter*i).rjust(5) +letter + (letter*i).ljust(5))
 
-for i in range(1,8):
+def cone_reversed(thickness,letter):
+    thickness = math.floor(thickness/2)
   
-    print((('h'*i).rjust(8)),end='')
-    print((('h'*i).ljust(8)))
-    
+    for i in range(thickness+1):
+     print((letter*(thickness-i)).rjust(5) +letter + (letter*(thickness-i)).ljust(5))
 
-
-
-
-
-      
    
+
+
+
+
+cone_print(7,'s')
+cone_reversed(7,'s')
