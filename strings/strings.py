@@ -1,5 +1,6 @@
 import numpy as np
 import math
+import string
 def count_letters(s):
  print("Enter the string")
 
@@ -36,14 +37,35 @@ def cone_print(thickness,letter):
 
 def cone_reversed(thickness,letter):
     thickness = math.floor(thickness/2)
-  
     for i in range(thickness+1):
      print((letter*(thickness-i)).rjust(5) +letter + (letter*(thickness-i)).ljust(5))
 
-   
 
 
 
 
-cone_print(7,'s')
-cone_reversed(7,'s')
+def rangoli (index):
+   alphabet='abcdefghijklmnopqrstuvwxyz'
+   for i in range(index,0,-1):
+      print(( alphabet[(i-1) :(index-i)]).rjust(index) + alphabet[i-1]   + (alphabet[(i-1) :(index-i)]).ljust(index))
+
+  
+
+
+
+
+
+
+#rangoli(10)
+
+
+l1 = [0,1,2,3,4,5]  
+
+l2 =   l1[4:0:-1]
+print(l2)
+
+
+
+
+#cone_print(7,'s')
+#cone_reversed(7,'s')
