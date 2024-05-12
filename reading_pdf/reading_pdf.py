@@ -41,7 +41,7 @@ def extract_words_from_pdf(file_path):
     return set1
 
 # Usage
-pdf_words = extract_words_from_pdf("rose.pdf")
+pdf_words = extract_words_from_pdf("42.pdf")
 print(pdf_words)
 
 
