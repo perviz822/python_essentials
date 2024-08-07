@@ -4,7 +4,7 @@ class A :
         self.name =name
         self.age = age
 
-obj  = A("parviz",13)
+obj  = A("cavid",13)
 
 print(obj)
 
