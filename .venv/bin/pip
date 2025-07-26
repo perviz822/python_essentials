@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/parvizpirizade/Documents/python essentials/.venv/bin/python3" "$0" "$@"
-' '''
+#!/Users/parvizpirizade/Documents/python_essentials/python_essentials/.venv/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys
